@@ -46,7 +46,7 @@ AudioMode = 'EARPIECE' | 'SPEAKER' | 'NORMAL' | 'RINGTONE' | 'BLUETOOTH';
     try {
       this.IsSpeaker = !this.IsSpeaker;
       await AudiotoggleBluetooth.setAudioMode({
-        mode: this.IsSpeaker === true ? "RINGTONE" : "EARPIECE"
+        mode: this.IsSpeaker === true ? "SPEAKER" : "EARPIECE"
       });
     } catch (error) {
       console.error("Error toggling speaker:", error);

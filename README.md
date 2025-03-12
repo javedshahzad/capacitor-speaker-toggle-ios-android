@@ -9,7 +9,7 @@ npm install capacitor-plugin-speaker-toggle-ios-android
 npx cap sync
 ```
 
-### Iport the plugin in your ts file
+### Import the plugin in your ts file
 
 ```typescript
 import { AudiotoggleBluetooth } from 'capacitor-plugin-speaker-toggle-ios-android';

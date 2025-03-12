@@ -7,7 +7,7 @@
     "methods": [
       {
         "name": "setAudioMode",
-        "signature": "(data: { mode: AudioMode; }) => any",
+        "signature": "(data: { mode: AudioMode; }) => Promise<void>",
         "parameters": [
           {
             "name": "data",
@@ -15,7 +15,7 @@
             "type": "{ mode: AudioMode; }"
           }
         ],
-        "returns": "any",
+        "returns": "Promise<void>",
         "tags": [],
         "docs": "",
         "complexTypes": [
@@ -25,9 +25,9 @@
       },
       {
         "name": "isHeadsetConnected",
-        "signature": "() => any",
+        "signature": "() => Promise<{ connected: boolean; }>",
         "parameters": [],
-        "returns": "any",
+        "returns": "Promise<{ connected: boolean; }>",
         "tags": [],
         "docs": "",
         "complexTypes": [],
@@ -37,5 +37,35 @@
     "properties": []
   },
   "interfaces": [],
-  "enums": []
+  "enums": [],
+  "typeAliases": [
+    {
+      "name": "AudioMode",
+      "slug": "audiomode",
+      "docs": "",
+      "types": [
+        {
+          "text": "'EARPIECE'",
+          "complexTypes": []
+        },
+        {
+          "text": "'SPEAKER'",
+          "complexTypes": []
+        },
+        {
+          "text": "'NORMAL'",
+          "complexTypes": []
+        },
+        {
+          "text": "'RINGTONE'",
+          "complexTypes": []
+        },
+        {
+          "text": "'BLUETOOTH'",
+          "complexTypes": []
+        }
+      ]
+    }
+  ],
+  "pluginConfigs": []
 }

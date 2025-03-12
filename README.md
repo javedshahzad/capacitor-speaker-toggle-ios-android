@@ -14,7 +14,11 @@ npx cap sync
 ```typescript
 import { AudiotoggleBluetooth } from 'capacitor-plugin-speaker-toggle-ios-android';
 ```
-
+### In Android, If you face sound is not toggling, please check permission in your AndroidManifest.xml file
+```
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+```
 ## API
 
 <docgen-index>

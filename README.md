@@ -1,11 +1,11 @@
-# capacitor-plugin-audiotoggle-bluetooth
+# capacitor-plugin-speaker-toggle-ios-android
 
 Capacitor plugin for switching between speaker, earpiece and bluetooth headset when playing audio.
 
 ## Install
 
 ```bash
-npm install capacitor-plugin-audiotoggle-bluetooth
+npm install capacitor-plugin-speaker-toggle-ios-android
 npx cap sync
 ```
 
@@ -46,7 +46,7 @@ AudioMode = 'EARPIECE' | 'SPEAKER' | 'NORMAL' | 'RINGTONE' | 'BLUETOOTH';
     try {
       this.IsSpeaker = !this.IsSpeaker;
       await AudiotoggleBluetooth.setAudioMode({
-        mode: this.IsSpeaker == true ? "RINGTONE" : "EARPIECE"
+        mode: this.IsSpeaker === true ? "RINGTONE" : "EARPIECE"
       });
     } catch (error) {
       console.error("Error toggling speaker:", error);
